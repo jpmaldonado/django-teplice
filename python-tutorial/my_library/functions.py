@@ -7,5 +7,10 @@ def square(x):
         return x**2 # = x*x
     else:
         return "Incorrect type"
-print(square(4))    
-print(square('abc'))
+
+def plus_one(x):
+    return x+1        
+
+if __name__ == "__main__":
+    print(square(4))    
+    print(square('abc'))

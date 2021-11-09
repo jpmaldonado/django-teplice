@@ -1,0 +1,11 @@
+{% extends 'diary/base.html' %}
+
+{% block content %}
+<h2>Add a new beer</h2>
+<h6><a href="{% url 'users:logout' %}">Log out</a></h6>
+<form action="{% url 'diary:add_beer' %}" method="POST">
+{% csrf_token %}    
+{{ form.as_p }}
+<button name="submit"> Add Beer </button>
+</form>
+{% endblock content %}

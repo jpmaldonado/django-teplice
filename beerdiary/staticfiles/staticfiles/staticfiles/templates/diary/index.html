@@ -1,0 +1,12 @@
+{% extends 'diary/base.html' %}
+
+{% block content %}
+<h1>Hello</h1>
+<ul>
+{% for my_beer in my_beers %}
+   <li> <a href="{% url 'diary:beer' my_beer.id %}"> {{ my_beer.name }} </a> </li> 
+{% endfor %}
+
+</ul>
+{% endblock content %}
+

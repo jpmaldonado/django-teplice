@@ -1,4 +1,10 @@
 {% extends 'diary/base.html' %}
+{% load static %}
+
+{% block header %}
+<h1> My Beer Diary</h1>
+<img src="{% static 'img/beer.jpg' %}">
+{% endblock header %}
 
 {% block content %}
 <h1>Hello</h1>
